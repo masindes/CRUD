@@ -1,16 +1,17 @@
-
 import React from 'react'
-import { Footer, Navbar } from './components/Layout';
-import { Home } from './src/pages/Home';
+import ReactDom from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { Footer, Navbar } from './components/Layout'
+import { Home } from './components/Home'
 
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
     <Navbar />
     <Home />
-    <Footer />
-    </>
+    <>Footer </>
+    </BrowserRouter>
   )
 }
 
