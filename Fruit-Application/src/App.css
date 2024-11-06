@@ -1,10 +1,21 @@
 #root{
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   font-family: Arial, sans-serif;
-  width: 100%;
-  height: 100vh;
+  margin-bottom: 20px;
+  color: black;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(50, 49, 49, 0.2);
+}
+form{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+  
   
 }
