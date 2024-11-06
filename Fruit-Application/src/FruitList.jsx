@@ -1,11 +1,9 @@
 import React from 'react'
-import Fruitsdetails from './Fruitsdetails'
+import FruitsDetails from './Fruitsdetails'
 
-const FruitList = () => {
+const FruitList = (props) => {
   return (
-    <div>
-        FruitDetails
-    </div>
+    
   )
 }
 

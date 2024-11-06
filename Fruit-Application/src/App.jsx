@@ -18,7 +18,7 @@ function App() {
     <>
      
       <h1>Fruit Application</h1>
-      <FruitList />
+      <FruitList Fruits = {Fruits}/>
 
     </>
   )
