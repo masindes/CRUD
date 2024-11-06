@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import FruitList from './Fruitlist'
+import Fruitsdetails from './Fruitsdetails'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const Fruits = [
+    {id:1, name: 'apple', description: 'Red Delicious', price:'ksh10', size: '0.5kg',availability:'available'},
+    {id:2, name: 'Apricot', description: 'Rosaceae family', price:'ksh5', size: '10kg', availability:'available'},
+    {id:3, name: 'Avocado', description: 'Lauraceae family', price:'ksh19', size: '12kg', availability:'available'},
+    {id:4, name: 'Banana', description: 'Musaceae family,', price:'ksh5', size: '5kg', availability:'available'},
+    {id:5, name: 'Blueberry', description: 'Ericaceae family', price:'ksh4', size: '6kg', availability:'not-available'},
+    {id:6, name: 'Cherry', description: 'Red Delicious', price:'ksh26', size: '4kg', availability:'available'},
+    {id:7, name: 'Coconut', description: 'Arecaceae family,', price:'ksh170', size: '3kg', availability:'available'},
+    {id:8, name: 'Cranberry', description: 'Ericaceae family', price:'ksh23', size: '10kg',availability:'not-available'},
+  ]
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     
+      <h1>Fruit Application</h1>
+      <FruitList />
+
     </>
   )
 }
